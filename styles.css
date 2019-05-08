@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 1px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  grid-template-rows: auto auto auto auto auto;
+  color: black;
+  //grid-auto-rows: auto;
+  //grid-gap: 1px;
+  grid-template-areas:
+  " one two "
+  " one three "
+  " four five "
+  " four six "
+  " four seven "
+  " eight seven";
+
+}
+
+.grid div:nth-child(odd) {
+  //background-color: green;
+}
+
+.grid div:nth-child(even) {
+  //background-color: #333;
+}
+
+ .one {
+   grid-area: one;
+   background-color: #e5dfde;
+   //justify-self: center ;
+ }
+ .one > p1{
+   font-size: 200%;
+   padding: 100px;
+   font-family: thinking of betty;
+   text-align: center;
+ }
+ .one > h1{
+   font-family: helvetica;
+   font-size: 100%;
+   padding: 20px;
+ }
+ .two {
+   grid-area: two;
+   background-color: #d1bca1;
+   //justify-self: center ;
+    align-items: center ;
+ }
+ .two > p1{
+   font-size: 500%;
+   padding: 200px;
+   font-family: thinking of betty;
+   marg
+
+
+ }
+ .two > h1{
+   font-family: mistral;
+   font-size: 200%;
+   padding: 0 0 0 400px;
+   //justify-self: center ;
+ }
+
+
+
+
+
+.three {
+  grid-area: three;
+  background-color: #d1bca1;
+}
+.three > h1{
+  font-size: 200%;
+  padding: 10px;
+  font-family: thinking of betty;
+  text-align: justify ;
+}
+.four {
+  grid-area: four;
+  background-color: #e5dfde;
+}
+.four > h1{
+  font-family:helvetica;
+  font-size: 100%;
+  padding: 20px;
+}
+.four > p1{
+  font-family: thinking of betty;
+  font-size: 200%;
+  padding: 50px;
+  text-align: justify ;
+}
+.five {
+  grid-area: five;
+  //justify-self: center ;
+  background-color: #333;
+}
+
+.six {
+  grid-area: six;
+  //justify-self: center ;
+  background-color: #d1bca1;
+
+}
+.six > h1{
+  font-family: thinking of betty;
+  padding: 10px;
+  text-align: justify ;
+}
+.seven {
+  grid-area: seven;
+  //justify-self: center ;
+}
+.eight {
+  grid-area: eight;
+  background-color: #e5dfde;
+  //justify-self: center ;
+}
+.eight > h1{
+  font-family: thinking of betty;
+  font-size: 200%;
+  padding: 20px;
+}

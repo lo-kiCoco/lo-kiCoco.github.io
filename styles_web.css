@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1/2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  color: black;
+  //grid-auto-rows: auto;
+
+  grid-template-areas:
+  " one two three three three three four five "
+  " six seven seven seven seven seven seven seven"
+  " eight eight eight eight eight eight eight eight "
+  " nine nine nine nine nine nine nine nine "
+  " ten twelve thirteen fourteen fifteen sixteen eleven eleven "
+  " ten seventeen eighteen ninteen twenty twenty-one eleven eleven"
+  " ten twenty-two twenty-two twenty-two twenty-two twenty-two eleven eleven"
+  " ten twenty-two twenty-two twenty-two twenty-two twenty-two eleven eleven";
+
+}
+
+.grid div:nth-child(odd) {
+  //background-color: green;
+}
+
+.grid div:nth-child(even) {
+  //background-color: #333;
+}
+
+ .one {
+   grid-area: one;
+   background-color: white;
+   //justify-self: center ;
+}
+.one > img {
+ padding-left: 20px;
+ padding-top: 20px;
+
+}
+
+ .two {
+  grid-area: two;
+  font-size:50%;
+  padding-top: 45px;
+padding-right: 50px;
+   padding-bottom: 20px;
+
+
+
+ }
+
+ .two > h1{
+     text-align: center;
+font-family:Verdana ;
+}
+
+
+.three {
+  grid-area: three;
+  background-color:white;
+  font-size:50%;
+  padding-top: 30px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+}
+
+.four {
+  grid-area: four;
+  background-color:white;
+  font-size:80%;
+  padding-top: 35px;
+
+   padding-bottom: 20px;
+   padding-left: 50px;
+
+}
+.four> a{
+    text-align: center;
+    font-size:100%;
+  }
+.four> a:link, a:visited {
+background-color: #bf0028;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family:Verdana;
+}
+
+.four> a:hover, a:active {
+background-color: red;
+
+}
+
+.five {
+  grid-area: five;
+  background-color:white;
+  font-size:80%;
+  padding-top: 35px;
+
+   padding-bottom: 20px;
+
+
+}
+.five> a{
+    text-align: center;
+    font-size:100%;
+  }
+.five> a:link, a:visited {
+background-color: #bf0028;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family:Verdana;
+}
+.five> a:hover, a:active {
+background-color: red;
+
+}
+.six {
+  grid-area: six;
+  background-color:white;
+  font-size:100%;
+
+
+   padding-bottom: 20px;
+   padding-left: 25px;
+}
+.six> a{
+    text-align: center;
+    font-size:100%;
+  }
+.six> a:link, a:visited {
+
+color: black;
+
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family:Verdana;
+}
+
+.six> a:hover  {
+  color: #bf0028;
+
+
+}
+.seven {
+  grid-area: seven;
+
+   padding-right: 10px;
+   padding-bottom: 20px;
+
+}
+.eight {
+  grid-area: eight;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.eight > a:link, a:visited {
+background-color: #bf0028;
+color: white;
+
+text-align: center;
+text-decoration: none;
+
+font-family:Verdana;
+padding-top: 10px;
+ padding-right:10px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+}
+
+.eight > a:hover, a:active {
+background-color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 50px;
+right: 150px;
+
+}
+.nine {
+  grid-area: nine;
+  padding-top: 30px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+}
+.ten{
+  grid-area: ten;
+  padding-top: 30px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+}
+.eleven {
+  grid-area: eleven;
+
+}
+.twelve {
+  grid-area: twelve;
+
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 55px;
+}
+.thirteen {
+  grid-area: thirteen;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+.fourteen {
+  grid-area: fourteen;
+
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+}
+.fifteen{
+  grid-area: fifteen;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+.sixteen {
+  grid-area: sixteen;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 75px;
+
+}
+.seventeen {
+  grid-area: seventeen;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-family:Verdana;
+      font-size:60%;
+}
+
+.eighteen {
+  grid-area: eighteen;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-family:Verdana;
+    font-size:65%;
+}
+
+.nineteen {
+  grid-area: ninteen;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  font-family:Verdana;
+  font-size:70%;
+}
+.twenty {
+  grid-area: twenty;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  font-family:Verdana;
+  font-size:90%;
+    }
+
+.twenty-one {
+  grid-area: twenty-one;
+   padding-right: 10px;
+   padding-bottom: 20px;
+   padding-left: 40px;
+    font-family:Verdana;
+   font-size:90%;
+}
+.twenty-two {
+  grid-area: twenty-two;
+}
